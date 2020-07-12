@@ -1,10 +1,13 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
 
-    return result
+    dict = {}
+    l = []
+    for i in a:
+        dict[i] = i
+        if -i in dict and i != 0:
+            l.append(abs(i))
+    return l
+
 
 
 if __name__ == "__main__":
